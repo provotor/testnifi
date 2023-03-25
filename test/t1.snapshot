@@ -15,16 +15,16 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "ae90e653-ca46-36b7-bf38-691b528fafdb",
+            "groupId" : "6a7b787c-5974-331d-9379-628f5727e128",
             "id" : "859766fd-03c6-3263-b9b8-378d48eb1cc2",
-            "instanceIdentifier" : "062b73e3-6838-3410-0d94-b9fa3e3d3aaf",
+            "instanceIdentifier" : "6eb5a4c4-391e-35d2-141d-9fb735cd77ea",
             "name" : "UpdateAttribute",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "ae90e653-ca46-36b7-bf38-691b528fafdb",
+          "groupIdentifier" : "6a7b787c-5974-331d-9379-628f5727e128",
           "identifier" : "8f5309ee-0828-32d8-a2f7-245db3dbb876",
-          "instanceIdentifier" : "49aece14-1707-343e-e2b2-f43700c78eb6",
+          "instanceIdentifier" : "fe865ed8-6b65-315c-b628-657183f65ccd",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -34,9 +34,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "ae90e653-ca46-36b7-bf38-691b528fafdb",
+            "groupId" : "6a7b787c-5974-331d-9379-628f5727e128",
             "id" : "f15dd335-7790-3fc7-a385-a19176f1cf01",
-            "instanceIdentifier" : "4e1fb761-1559-3b39-7f83-526e0a538071",
+            "instanceIdentifier" : "3d0ab69e-3f17-30d6-58f0-422eebe8951a",
             "name" : "GenerateFlowFile",
             "type" : "PROCESSOR"
           },
@@ -49,13 +49,13 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "ae90e653-ca46-36b7-bf38-691b528fafdb",
+        "identifier" : "6a7b787c-5974-331d-9379-628f5727e128",
         "inputPorts" : [ ],
-        "instanceIdentifier" : "eb4f3fc0-3552-1be1-b34e-0e243096fed4",
+        "instanceIdentifier" : "eb4f3fd4-3552-1be1-7da5-02a61f155b52",
         "labels" : [ ],
-        "name" : "t1",
+        "name" : "1",
         "outputPorts" : [ ],
-        "parameterContextName" : "c",
+        "parameterContextName" : "nifi-avtocode",
         "position" : {
           "x" : 0.0,
           "y" : 0.0
@@ -74,15 +74,15 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "ae90e653-ca46-36b7-bf38-691b528fafdb",
+          "groupIdentifier" : "6a7b787c-5974-331d-9379-628f5727e128",
           "identifier" : "f15dd335-7790-3fc7-a385-a19176f1cf01",
-          "instanceIdentifier" : "4e1fb761-1559-3b39-7f83-526e0a538071",
+          "instanceIdentifier" : "3d0ab69e-3f17-30d6-58f0-422eebe8951a",
           "maxBackoffPeriod" : "10 mins",
           "name" : "GenerateFlowFile",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 480.0,
-            "y" : 40.0
+            "x" : 464.0,
+            "y" : 64.0
           },
           "properties" : {
             "character-set" : "UTF-8",
@@ -157,15 +157,15 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "ae90e653-ca46-36b7-bf38-691b528fafdb",
+          "groupIdentifier" : "6a7b787c-5974-331d-9379-628f5727e128",
           "identifier" : "859766fd-03c6-3263-b9b8-378d48eb1cc2",
-          "instanceIdentifier" : "062b73e3-6838-3410-0d94-b9fa3e3d3aaf",
+          "instanceIdentifier" : "6eb5a4c4-391e-35d2-141d-9fb735cd77ea",
           "maxBackoffPeriod" : "10 mins",
           "name" : "UpdateAttribute",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 608.0,
-            "y" : 256.0
+            "x" : 640.0,
+            "y" : 224.0
           },
           "properties" : {
             "p" : "#{x}",
@@ -219,35 +219,125 @@
       },
       "flowEncodingVersion" : "1.0",
       "parameterContexts" : {
-        "c" : {
+        "nifi-avtocode" : {
           "componentType" : "PARAMETER_CONTEXT",
           "inheritedParameterContexts" : [ ],
-          "name" : "c",
-          "parameterGroupName" : "c",
-          "parameterProvider" : "96c168d7-0009-3598-29c2-759746fd46ca",
+          "name" : "nifi-avtocode",
+          "parameterGroupName" : "nifi-avtocode",
+          "parameterProvider" : "eb4f3f9e-3552-1be1-b4a6-986927fa9c9e",
           "parameters" : [ {
-            "name" : "c",
+            "name" : "kafkaGroupId-checkVehicle",
             "provided" : true,
             "sensitive" : false,
-            "value" : "c"
+            "value" : "dc1_nifi_check_vehicle_v1"
           }, {
-            "name" : "x",
+            "name" : "kafkaTopic-autocodeCaller",
             "provided" : true,
             "sensitive" : false,
-            "value" : "xxxxxx"
+            "value" : "kafkaTopic-avtocodeIssuedCall"
+          }, {
+            "name" : "test",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "111111111111111111kest"
+          }, {
+            "name" : "kafkaGroupId-regDataInit",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "dc1_nifi_get_vehicle_reg_data_v1"
+          }, {
+            "name" : "kafkaTopic-avtocodeIssuedCall",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "vk.autocode.issued_call.v1"
+          }, {
+            "name" : "regDataToRawDirectory",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/dc1/raw/avtocod/v1/${now():format('yyyy-MM-dd','GMT')}"
+          }, {
+            "name" : "kafkaGroupId-avtocodeCaller",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "dc1_nifi_avtocode_caller_v1"
+          }, {
+            "name" : "kafkaTopic-initRegData",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "vk.avtocode.vehicle.get_reg_data_task.v1"
+          }, {
+            "name" : "kafkaTopic-regDataToRaw",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "vk.avtocode.vehicle.v1.reg_history.v1"
+          }, {
+            "name" : "webhook_header",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "webhook_url"
+          }, {
+            "name" : "kafkaTopic-fitServiceInit",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "vk.fitservice.vehicle.get_srv_data_task.v1"
+          }, {
+            "name" : "regDataCallbackGatewayContextPath",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/webhook/autodata/reports/reg-data"
+          }, {
+            "name" : "regDataToRawTransitDirectory",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "/dc1/trans/avtocod/v1/ingestion_date=${now():format('yyyy-MM-dd','GMT')}"
+          }, {
+            "name" : "kafkaTopic-getRegDataTask",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "vk.avtocode.vehicle.get_reg_data_task.v1"
+          }, {
+            "name" : "elastic_avtocode_index",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "nifi-avtocode"
+          }, {
+            "name" : "kafkaGroupId-rawAvtocodeRegData",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "dc1_kafka-raw_avtocode_v1_vechicle_reg_data"
+          }, {
+            "name" : "regDataToRawFilename",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "${now():format('yyyyMMddhhmmss','GMT')}_${uuid}.raw"
+          }, {
+            "name" : "regDataToRawTransitFilename",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "${now():format('yyyyMMddhhmmss','GMT')}_${uuid}.json"
+          }, {
+            "name" : "kafkaTopic-ingestEvent",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "vk.vehicle.data.ingest.event.v1"
+          }, {
+            "name" : "kafkaTopic-initCheckVehicleTask",
+            "provided" : true,
+            "sensitive" : false,
+            "value" : "vk.avtocode.vehicle.initiate_check_task.v1"
           } ],
           "synchronized" : true
         }
       },
       "parameterProviders" : {
-        "96c168d7-0009-3598-29c2-759746fd46ca" : {
+        "eb4f3f9e-3552-1be1-b4a6-986927fa9c9e" : {
           "bundle" : {
             "artifact" : "nifi-hashicorp-vault-nar",
             "group" : "org.apache.nifi",
             "version" : "1.20.0"
           },
-          "identifier" : "96c168d7-0009-3598-29c2-759746fd46ca",
-          "name" : "HashiCorpVaultParameterProvider",
+          "identifier" : "eb4f3f9e-3552-1be1-b4a6-986927fa9c9e",
+          "name" : "VAULT",
           "type" : "org.apache.nifi.vault.hashicorp.HashiCorpVaultParameterProvider"
         }
       }
