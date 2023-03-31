@@ -2,5 +2,8 @@ flows:
   724f6dfd-c566-4a45-9077-3800a887991f: {ver: 5, file: Конвертация_файлов_на_диске..snapshot,
     comments: '', author: anonymous, created: 1680288792559, flowName: Конвертация
       файлов на диске., flowDesc: ''}
+  e07c1498-817d-4f8f-b793-563af4ce27ce: {ver: 1, file: Трансформация_JSON.snapshot,
+    comments: '', author: anonymous, created: 1680289504993, flowName: Трансформация
+      JSON, flowDesc: ''}
 layoutVer: 1
 bucketId: 211a7b34-c420-428f-b880-be67b1434eb9
