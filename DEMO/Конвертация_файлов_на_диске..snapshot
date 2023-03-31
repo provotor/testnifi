@@ -888,7 +888,7 @@
         "inputPorts" : [ ],
         "instanceIdentifier" : "22ea7507-0187-1000-ff1c-ed1a2420cddb",
         "labels" : [ ],
-        "name" : "Конвертер файлов",
+        "name" : "Конвертер JSON to XML",
         "outputPorts" : [ ],
         "position" : {
           "x" : -1288.0,
@@ -920,7 +920,7 @@
           },
           "properties" : {
             "Create Missing Directories" : "true",
-            "Directory" : "/exchange/xml_output",
+            "Directory" : "/exchange/converter/xml_output",
             "Conflict Resolution Strategy" : "fail"
           },
           "propertyDescriptors" : {
@@ -1135,7 +1135,7 @@
             "Keep Source File" : "false",
             "Minimum File Age" : "0 sec",
             "Polling Interval" : "0 sec",
-            "Input Directory" : "/exchange/json_input",
+            "Input Directory" : "/exchange/converter/json_input",
             "Batch Size" : "10",
             "Minimum File Size" : "0 B",
             "Ignore Hidden Files" : "true",
