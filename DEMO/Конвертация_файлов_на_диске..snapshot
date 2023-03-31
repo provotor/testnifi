@@ -920,7 +920,7 @@
           },
           "properties" : {
             "Create Missing Directories" : "true",
-            "Directory" : "/exchange/output",
+            "Directory" : "/exchange/xml_output",
             "Conflict Resolution Strategy" : "fail"
           },
           "propertyDescriptors" : {
@@ -1135,7 +1135,7 @@
             "Keep Source File" : "false",
             "Minimum File Age" : "0 sec",
             "Polling Interval" : "0 sec",
-            "Input Directory" : "/exchange/input",
+            "Input Directory" : "/exchange/json_input",
             "Batch Size" : "10",
             "Minimum File Size" : "0 B",
             "Ignore Hidden Files" : "true",
