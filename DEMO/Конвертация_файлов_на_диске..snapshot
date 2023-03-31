@@ -16,15 +16,15 @@
           "destination" : {
             "comments" : "",
             "groupId" : "9d0d946e-914f-315c-b076-b652053011e3",
-            "id" : "a344a74b-09c7-3290-bf50-aec828aa5c45",
-            "instanceIdentifier" : "22ee0da1-0187-1000-a813-d45bd6bc98d6",
-            "name" : "PutFile",
+            "id" : "82d53e22-dd4e-3fa2-b793-8f492060bdc3",
+            "instanceIdentifier" : "38f1b565-0187-1000-e270-a21a3ad31a8e",
+            "name" : "Новое имя",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "9d0d946e-914f-315c-b076-b652053011e3",
-          "identifier" : "94f769a5-022d-3b1a-8a81-ce73587a8753",
-          "instanceIdentifier" : "22ee3e32-0187-1000-c368-12435e6fce6d",
+          "identifier" : "603173c2-159c-3627-b076-6dea87af2e65",
+          "instanceIdentifier" : "38f2aec6-0187-1000-60ea-7f92ef76d881",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -37,7 +37,7 @@
             "groupId" : "9d0d946e-914f-315c-b076-b652053011e3",
             "id" : "2210b8d5-0133-3ca1-8b0d-aaae90518f93",
             "instanceIdentifier" : "22ec7d68-0187-1000-aca7-210f4e139aae",
-            "name" : "ConvertRecord",
+            "name" : "Конвертация",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -51,7 +51,7 @@
             "groupId" : "9d0d946e-914f-315c-b076-b652053011e3",
             "id" : "2210b8d5-0133-3ca1-8b0d-aaae90518f93",
             "instanceIdentifier" : "22ec7d68-0187-1000-aca7-210f4e139aae",
-            "name" : "ConvertRecord",
+            "name" : "Конвертация",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -70,7 +70,40 @@
             "groupId" : "9d0d946e-914f-315c-b076-b652053011e3",
             "id" : "764ddf5e-0e73-31ac-af59-42181824c156",
             "instanceIdentifier" : "22eb5d15-0187-1000-3ef0-7c42dcb9cfaa",
-            "name" : "Получить файлы",
+            "name" : "Получить файл",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "9d0d946e-914f-315c-b076-b652053011e3",
+            "id" : "a344a74b-09c7-3290-bf50-aec828aa5c45",
+            "instanceIdentifier" : "22ee0da1-0187-1000-a813-d45bd6bc98d6",
+            "name" : "Записать на диск",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "9d0d946e-914f-315c-b076-b652053011e3",
+          "identifier" : "4e04c750-f332-39e6-9a9f-059c84b3c0b8",
+          "instanceIdentifier" : "38f2b634-0187-1000-8f62-5578ca4e2b4c",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "9d0d946e-914f-315c-b076-b652053011e3",
+            "id" : "82d53e22-dd4e-3fa2-b793-8f492060bdc3",
+            "instanceIdentifier" : "38f1b565-0187-1000-e270-a21a3ad31a8e",
+            "name" : "Новое имя",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -227,6 +260,116 @@
               "group" : "org.apache.nifi",
               "version" : "1.20.0"
             },
+            "type" : "org.apache.nifi.serialization.RecordReaderFactory"
+          } ],
+          "groupIdentifier" : "9d0d946e-914f-315c-b076-b652053011e3",
+          "identifier" : "0e367bbc-d31e-35e5-93c9-9eca352ba2b1",
+          "instanceIdentifier" : "38db84c9-0187-1000-e684-7e8826548399",
+          "name" : "JsonTreeReader",
+          "properties" : {
+            "schema-application-strategy" : "SELECTED_PART",
+            "schema-name" : "${schema.name}",
+            "starting-field-strategy" : "ROOT_NODE",
+            "schema-access-strategy" : "infer-schema",
+            "schema-text" : "${avro.schema}"
+          },
+          "propertyDescriptors" : {
+            "schema-branch" : {
+              "displayName" : "Schema Branch",
+              "identifiesControllerService" : false,
+              "name" : "schema-branch",
+              "sensitive" : false
+            },
+            "schema-application-strategy" : {
+              "displayName" : "Schema Application Strategy",
+              "identifiesControllerService" : false,
+              "name" : "schema-application-strategy",
+              "sensitive" : false
+            },
+            "Timestamp Format" : {
+              "displayName" : "Timestamp Format",
+              "identifiesControllerService" : false,
+              "name" : "Timestamp Format",
+              "sensitive" : false
+            },
+            "schema-inference-cache" : {
+              "displayName" : "Schema Inference Cache",
+              "identifiesControllerService" : true,
+              "name" : "schema-inference-cache",
+              "sensitive" : false
+            },
+            "Date Format" : {
+              "displayName" : "Date Format",
+              "identifiesControllerService" : false,
+              "name" : "Date Format",
+              "sensitive" : false
+            },
+            "schema-name" : {
+              "displayName" : "Schema Name",
+              "identifiesControllerService" : false,
+              "name" : "schema-name",
+              "sensitive" : false
+            },
+            "starting-field-strategy" : {
+              "displayName" : "Starting Field Strategy",
+              "identifiesControllerService" : false,
+              "name" : "starting-field-strategy",
+              "sensitive" : false
+            },
+            "schema-registry" : {
+              "displayName" : "Schema Registry",
+              "identifiesControllerService" : true,
+              "name" : "schema-registry",
+              "sensitive" : false
+            },
+            "starting-field-name" : {
+              "displayName" : "Starting Field Name",
+              "identifiesControllerService" : false,
+              "name" : "starting-field-name",
+              "sensitive" : false
+            },
+            "Time Format" : {
+              "displayName" : "Time Format",
+              "identifiesControllerService" : false,
+              "name" : "Time Format",
+              "sensitive" : false
+            },
+            "schema-access-strategy" : {
+              "displayName" : "Schema Access Strategy",
+              "identifiesControllerService" : false,
+              "name" : "schema-access-strategy",
+              "sensitive" : false
+            },
+            "schema-version" : {
+              "displayName" : "Schema Version",
+              "identifiesControllerService" : false,
+              "name" : "schema-version",
+              "sensitive" : false
+            },
+            "schema-text" : {
+              "displayName" : "Schema Text",
+              "identifiesControllerService" : false,
+              "name" : "schema-text",
+              "sensitive" : false
+            }
+          },
+          "scheduledState" : "DISABLED",
+          "type" : "org.apache.nifi.json.JsonTreeReader"
+        }, {
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-record-serialization-services-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "CONTROLLER_SERVICE",
+          "controllerServiceApis" : [ {
+            "bundle" : {
+              "artifact" : "nifi-standard-services-api-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.20.0"
+            },
             "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
           } ],
           "groupIdentifier" : "9d0d946e-914f-315c-b076-b652053011e3",
@@ -237,10 +380,11 @@
             "omit_xml_declaration" : "false",
             "suppress_nulls" : "never-suppress",
             "Schema Write Strategy" : "no-schema",
+            "record_tag_name" : "record",
             "schema-name" : "${schema.name}",
             "array_wrapping" : "no-wrapping",
             "schema-access-strategy" : "inherit-record-schema",
-            "pretty_print_xml" : "false",
+            "pretty_print_xml" : "true",
             "schema-protocol-version" : "1",
             "schema-text" : "${avro.schema}",
             "Character Set" : "UTF-8"
@@ -548,6 +692,191 @@
           },
           "scheduledState" : "DISABLED",
           "type" : "org.apache.nifi.csv.CSVReader"
+        }, {
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-record-serialization-services-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "componentType" : "CONTROLLER_SERVICE",
+          "controllerServiceApis" : [ {
+            "bundle" : {
+              "artifact" : "nifi-standard-services-api-nar",
+              "group" : "org.apache.nifi",
+              "version" : "1.20.0"
+            },
+            "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
+          } ],
+          "groupIdentifier" : "9d0d946e-914f-315c-b076-b652053011e3",
+          "identifier" : "c944acdb-8241-39d6-843f-6d728f6444e3",
+          "instanceIdentifier" : "38dba082-0187-1000-e2d9-b2b3afd86363",
+          "name" : "CSVRecordSetWriter",
+          "properties" : {
+            "CSV Format" : "custom",
+            "Quote Character" : "\"",
+            "Include Header Line" : "true",
+            "Value Separator" : ",",
+            "Record Separator" : "\\n",
+            "Escape Character" : "\\",
+            "Schema Write Strategy" : "no-schema",
+            "Trim Fields" : "true",
+            "schema-name" : "${schema.name}",
+            "schema-access-strategy" : "inherit-record-schema",
+            "schema-protocol-version" : "1",
+            "csvutils-character-set" : "UTF-8",
+            "schema-text" : "${avro.schema}",
+            "Quote Mode" : "MINIMAL",
+            "Include Trailing Delimiter" : "false"
+          },
+          "propertyDescriptors" : {
+            "schema-branch" : {
+              "displayName" : "Schema Branch",
+              "identifiesControllerService" : false,
+              "name" : "schema-branch",
+              "sensitive" : false
+            },
+            "CSV Format" : {
+              "displayName" : "CSV Format",
+              "identifiesControllerService" : false,
+              "name" : "CSV Format",
+              "sensitive" : false
+            },
+            "Quote Character" : {
+              "displayName" : "Quote Character",
+              "identifiesControllerService" : false,
+              "name" : "Quote Character",
+              "sensitive" : false
+            },
+            "Include Header Line" : {
+              "displayName" : "Include Header Line",
+              "identifiesControllerService" : false,
+              "name" : "Include Header Line",
+              "sensitive" : false
+            },
+            "Value Separator" : {
+              "displayName" : "Value Separator",
+              "identifiesControllerService" : false,
+              "name" : "Value Separator",
+              "sensitive" : false
+            },
+            "schema-cache" : {
+              "displayName" : "Schema Cache",
+              "identifiesControllerService" : true,
+              "name" : "schema-cache",
+              "sensitive" : false
+            },
+            "Record Separator" : {
+              "displayName" : "Record Separator",
+              "identifiesControllerService" : false,
+              "name" : "Record Separator",
+              "sensitive" : false
+            },
+            "Timestamp Format" : {
+              "displayName" : "Timestamp Format",
+              "identifiesControllerService" : false,
+              "name" : "Timestamp Format",
+              "sensitive" : false
+            },
+            "Escape Character" : {
+              "displayName" : "Escape Character",
+              "identifiesControllerService" : false,
+              "name" : "Escape Character",
+              "sensitive" : false
+            },
+            "Date Format" : {
+              "displayName" : "Date Format",
+              "identifiesControllerService" : false,
+              "name" : "Date Format",
+              "sensitive" : false
+            },
+            "Schema Write Strategy" : {
+              "displayName" : "Schema Write Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Schema Write Strategy",
+              "sensitive" : false
+            },
+            "Null String" : {
+              "displayName" : "Null String",
+              "identifiesControllerService" : false,
+              "name" : "Null String",
+              "sensitive" : false
+            },
+            "Trim Fields" : {
+              "displayName" : "Trim Fields",
+              "identifiesControllerService" : false,
+              "name" : "Trim Fields",
+              "sensitive" : false
+            },
+            "schema-name" : {
+              "displayName" : "Schema Name",
+              "identifiesControllerService" : false,
+              "name" : "schema-name",
+              "sensitive" : false
+            },
+            "schema-registry" : {
+              "displayName" : "Schema Registry",
+              "identifiesControllerService" : true,
+              "name" : "schema-registry",
+              "sensitive" : false
+            },
+            "Time Format" : {
+              "displayName" : "Time Format",
+              "identifiesControllerService" : false,
+              "name" : "Time Format",
+              "sensitive" : false
+            },
+            "Comment Marker" : {
+              "displayName" : "Comment Marker",
+              "identifiesControllerService" : false,
+              "name" : "Comment Marker",
+              "sensitive" : false
+            },
+            "schema-access-strategy" : {
+              "displayName" : "Schema Access Strategy",
+              "identifiesControllerService" : false,
+              "name" : "schema-access-strategy",
+              "sensitive" : false
+            },
+            "schema-protocol-version" : {
+              "displayName" : "Schema Protocol Version",
+              "identifiesControllerService" : false,
+              "name" : "schema-protocol-version",
+              "sensitive" : false
+            },
+            "schema-version" : {
+              "displayName" : "Schema Version",
+              "identifiesControllerService" : false,
+              "name" : "schema-version",
+              "sensitive" : false
+            },
+            "csvutils-character-set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "csvutils-character-set",
+              "sensitive" : false
+            },
+            "schema-text" : {
+              "displayName" : "Schema Text",
+              "identifiesControllerService" : false,
+              "name" : "schema-text",
+              "sensitive" : false
+            },
+            "Quote Mode" : {
+              "displayName" : "Quote Mode",
+              "identifiesControllerService" : false,
+              "name" : "Quote Mode",
+              "sensitive" : false
+            },
+            "Include Trailing Delimiter" : {
+              "displayName" : "Include Trailing Delimiter",
+              "identifiesControllerService" : false,
+              "name" : "Include Trailing Delimiter",
+              "sensitive" : false
+            }
+          },
+          "scheduledState" : "DISABLED",
+          "type" : "org.apache.nifi.csv.CSVRecordSetWriter"
         } ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
         "defaultBackPressureObjectThreshold" : 10000,
@@ -567,7 +896,7 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ "failure" ],
+          "autoTerminatedRelationships" : [ "success", "failure" ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -583,15 +912,15 @@
           "identifier" : "a344a74b-09c7-3290-bf50-aec828aa5c45",
           "instanceIdentifier" : "22ee0da1-0187-1000-a813-d45bd6bc98d6",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "PutFile",
+          "name" : "Записать на диск",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 392.0,
-            "y" : 408.0
+            "y" : 576.0
           },
           "properties" : {
             "Create Missing Directories" : "true",
-            "Directory" : "exchange/output",
+            "Directory" : "/exchange/output",
             "Conflict Resolution Strategy" : "fail"
           },
           "propertyDescriptors" : {
@@ -647,11 +976,80 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
+          "scheduledState" : "ENABLED",
           "schedulingPeriod" : "0 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-update-attribute-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "9d0d946e-914f-315c-b076-b652053011e3",
+          "identifier" : "82d53e22-dd4e-3fa2-b793-8f492060bdc3",
+          "instanceIdentifier" : "38f1b565-0187-1000-e270-a21a3ad31a8e",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "Новое имя",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 392.0,
+            "y" : 392.0
+          },
+          "properties" : {
+            "filename" : "${filename}_to_XML_${now():format(\"yyyy_MM_dd_HH_mm_ss\")}.xml",
+            "Store State" : "Do not store state",
+            "canonical-value-lookup-cache-size" : "100"
+          },
+          "propertyDescriptors" : {
+            "Delete Attributes Expression" : {
+              "displayName" : "Delete Attributes Expression",
+              "identifiesControllerService" : false,
+              "name" : "Delete Attributes Expression",
+              "sensitive" : false
+            },
+            "filename" : {
+              "displayName" : "filename",
+              "identifiesControllerService" : false,
+              "name" : "filename",
+              "sensitive" : false
+            },
+            "Store State" : {
+              "displayName" : "Store State",
+              "identifiesControllerService" : false,
+              "name" : "Store State",
+              "sensitive" : false
+            },
+            "canonical-value-lookup-cache-size" : {
+              "displayName" : "Cache Value Lookup Cache Size",
+              "identifiesControllerService" : false,
+              "name" : "canonical-value-lookup-cache-size",
+              "sensitive" : false
+            },
+            "Stateful Variables Initial Value" : {
+              "displayName" : "Stateful Variables Initial Value",
+              "identifiesControllerService" : false,
+              "name" : "Stateful Variables Initial Value",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 25,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
           "yieldDuration" : "1 sec"
         }, {
           "autoTerminatedRelationships" : [ "failure" ],
@@ -670,15 +1068,15 @@
           "identifier" : "2210b8d5-0133-3ca1-8b0d-aaae90518f93",
           "instanceIdentifier" : "22ec7d68-0187-1000-aca7-210f4e139aae",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "ConvertRecord",
+          "name" : "Конвертация",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 392.0,
             "y" : 208.0
           },
           "properties" : {
-            "record-writer" : "3a933f47-c1dc-3115-890f-01832ba7a0be",
-            "record-reader" : "bdc9a3eb-d7e9-3028-bb6a-de130f4fd38f",
+            "record-writer" : "7102d1bb-ddf4-3a49-87cf-0977b6dc2372",
+            "record-reader" : "0e367bbc-d31e-35e5-93c9-9eca352ba2b1",
             "include-zero-record-flowfiles" : "true"
           },
           "propertyDescriptors" : {
@@ -704,7 +1102,7 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
+          "scheduledState" : "ENABLED",
           "schedulingPeriod" : "0 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
@@ -727,7 +1125,7 @@
           "identifier" : "764ddf5e-0e73-31ac-af59-42181824c156",
           "instanceIdentifier" : "22eb5d15-0187-1000-3ef0-7c42dcb9cfaa",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "Получить файлы",
+          "name" : "Получить файл",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 392.0,
@@ -737,7 +1135,7 @@
             "Keep Source File" : "false",
             "Minimum File Age" : "0 sec",
             "Polling Interval" : "0 sec",
-            "Input Directory" : "/exhange/input",
+            "Input Directory" : "/exchange/input",
             "Batch Size" : "10",
             "Minimum File Size" : "0 B",
             "Ignore Hidden Files" : "true",
@@ -821,8 +1219,8 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
-          "schedulingPeriod" : "0 sec",
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "2 sec",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
           "type" : "org.apache.nifi.processors.standard.GetFile",
