@@ -90,7 +90,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "cae61278-8000-3130-bab9-02dcfd8a5cca",
             "instanceIdentifier" : "01871012-b634-18f2-233b-0d3746ca63f5",
-            "name" : "Мин. температура",
+            "name" : "Температуру из JSON в атрибут.",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -253,7 +253,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "cae61278-8000-3130-bab9-02dcfd8a5cca",
             "instanceIdentifier" : "01871012-b634-18f2-233b-0d3746ca63f5",
-            "name" : "Мин. температура",
+            "name" : "Температуру из JSON в атрибут.",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -417,7 +417,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "cae61278-8000-3130-bab9-02dcfd8a5cca",
             "instanceIdentifier" : "01871012-b634-18f2-233b-0d3746ca63f5",
-            "name" : "Мин. температура",
+            "name" : "Температуру из JSON в атрибут.",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -436,7 +436,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "cae61278-8000-3130-bab9-02dcfd8a5cca",
             "instanceIdentifier" : "01871012-b634-18f2-233b-0d3746ca63f5",
-            "name" : "Мин. температура",
+            "name" : "Температуру из JSON в атрибут.",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -913,7 +913,7 @@
           "identifier" : "cae61278-8000-3130-bab9-02dcfd8a5cca",
           "instanceIdentifier" : "01871012-b634-18f2-233b-0d3746ca63f5",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "Мин. температура",
+          "name" : "Температуру из JSON в атрибут.",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 504.0,
