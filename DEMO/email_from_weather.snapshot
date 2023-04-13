@@ -16,28 +16,28 @@
           "destination" : {
             "comments" : "",
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
-            "id" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
-            "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
-            "name" : "Текст для письма",
+            "id" : "06fcbd87-39ce-3ab8-a0eb-5ac86c09606e",
+            "instanceIdentifier" : "01871010-b634-18f2-a624-d5704231135d",
+            "name" : "Отправить письмо",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
-          "identifier" : "c5fc40a6-9e0a-3df1-8afc-ebac12ab3978",
-          "instanceIdentifier" : "7a6b0412-0187-1000-0bcb-3b2af5625579",
+          "identifier" : "f1266a1e-673c-3fda-958a-9457f0b0d60e",
+          "instanceIdentifier" : "01871006-e2f6-1a69-16fb-4939557ff021",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
           "partitioningAttribute" : "",
           "prioritizers" : [ ],
-          "selectedRelationships" : [ "low_temp" ],
+          "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
-            "id" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
-            "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
-            "name" : "Условие по температуре",
+            "id" : "6884242e-6829-3141-a7f7-e64e08536b47",
+            "instanceIdentifier" : "01871004-e2f6-1a69-d545-534d0c797eac",
+            "name" : "Текст для письма",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -45,11 +45,11 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 971.8084716796875,
-            "y" : 867.8360595703125
+            "x" : 1004.1689147949219,
+            "y" : 1047.8410034179688
           }, {
-            "x" : 971.8084716796875,
-            "y" : 917.8360595703125
+            "x" : 1004.1689147949219,
+            "y" : 1097.8410034179688
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -77,39 +77,6 @@
             "id" : "06fcbd87-39ce-3ab8-a0eb-5ac86c09606e",
             "instanceIdentifier" : "01871010-b634-18f2-a624-d5704231135d",
             "name" : "Отправить письмо",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
-            "id" : "06fcbd87-39ce-3ab8-a0eb-5ac86c09606e",
-            "instanceIdentifier" : "01871010-b634-18f2-a624-d5704231135d",
-            "name" : "Отправить письмо",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
-          "identifier" : "5893ec6f-0fdb-3879-9133-1ed540fcd5aa",
-          "instanceIdentifier" : "7a6b20fa-0187-1000-dda6-f61eb8153389",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
-            "id" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
-            "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
-            "name" : "Текст для письма",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -150,11 +117,11 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 973.0,
-            "y" : 671.0
+            "x" : 685.8009948730469,
+            "y" : 661.8986206054688
           }, {
-            "x" : 973.0,
-            "y" : 721.0
+            "x" : 685.8009948730469,
+            "y" : 711.8986206054688
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -182,6 +149,39 @@
             "id" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
             "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
             "name" : "Текст для письма",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "6884242e-6829-3141-a7f7-e64e08536b47",
+            "instanceIdentifier" : "01871004-e2f6-1a69-d545-534d0c797eac",
+            "name" : "Текст для письма",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+          "identifier" : "92ae24b9-a865-3992-a598-d181128b4135",
+          "instanceIdentifier" : "01871005-e2f6-1a69-1dde-2c6b6ecd3771",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "high_temp" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
+            "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
+            "name" : "Условие по температуре",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -227,12 +227,150 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
+            "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
+            "name" : "Условие по температуре",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+          "identifier" : "56590018-133b-3c81-a5f5-0ba049ed6b24",
+          "instanceIdentifier" : "7a674adb-0187-1000-c7c0-6999bb97ce15",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "matched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "cae61278-8000-3130-bab9-02dcfd8a5cca",
+            "instanceIdentifier" : "01871012-b634-18f2-233b-0d3746ca63f5",
+            "name" : "Мин. температура",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 973.0,
-            "y" : 463.0
+            "x" : 1293.0,
+            "y" : 663.0
           }, {
-            "x" : 973.0,
-            "y" : 513.0
+            "x" : 1293.0,
+            "y" : 713.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "6884242e-6829-3141-a7f7-e64e08536b47",
+            "instanceIdentifier" : "01871004-e2f6-1a69-d545-534d0c797eac",
+            "name" : "Текст для письма",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+          "identifier" : "05e8679e-01e4-3f33-a9f7-da4ccfd0a1e8",
+          "instanceIdentifier" : "01871007-e2f6-1a69-2b41-174d935dcf07",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "6884242e-6829-3141-a7f7-e64e08536b47",
+            "instanceIdentifier" : "01871004-e2f6-1a69-d545-534d0c797eac",
+            "name" : "Текст для письма",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
+            "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
+            "name" : "Текст для письма",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+          "identifier" : "c5fc40a6-9e0a-3df1-8afc-ebac12ab3978",
+          "instanceIdentifier" : "7a6b0412-0187-1000-0bcb-3b2af5625579",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "low_temp" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
+            "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
+            "name" : "Условие по температуре",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "06fcbd87-39ce-3ab8-a0eb-5ac86c09606e",
+            "instanceIdentifier" : "01871010-b634-18f2-a624-d5704231135d",
+            "name" : "Отправить письмо",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+          "identifier" : "5893ec6f-0fdb-3879-9133-1ed540fcd5aa",
+          "instanceIdentifier" : "7a6b20fa-0187-1000-dda6-f61eb8153389",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+            "id" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
+            "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
+            "name" : "Текст для письма",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 978.0563049316406,
+            "y" : 454.90985107421875
+          }, {
+            "x" : 978.0563049316406,
+            "y" : 504.90985107421875
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -302,39 +440,6 @@
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
-            "id" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
-            "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
-            "name" : "Условие по температуре",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
-          "identifier" : "56590018-133b-3c81-a5f5-0ba049ed6b24",
-          "instanceIdentifier" : "7a674adb-0187-1000-c7c0-6999bb97ce15",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "matched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
-            "id" : "cae61278-8000-3130-bab9-02dcfd8a5cca",
-            "instanceIdentifier" : "01871012-b634-18f2-233b-0d3746ca63f5",
-            "name" : "Мин. температура",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
         } ],
         "controllerServices" : [ ],
         "defaultBackPressureDataSizeThreshold" : "1 GB",
@@ -375,14 +480,21 @@
           "name" : "Условие по температуре",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 504.0,
-            "y" : 424.0
+            "x" : 512.0,
+            "y" : 416.0
           },
           "properties" : {
+            "high_temp" : "${minTemperature:lt(#{highTempThreshold})}",
             "Routing Strategy" : "Route to Property name",
-            "low_temp" : "${minTemperature:lt(#{tempThreshold})}"
+            "low_temp" : "${minTemperature:lt(#{lowTempThreshold})}"
           },
           "propertyDescriptors" : {
+            "high_temp" : {
+              "displayName" : "high_temp",
+              "identifiesControllerService" : false,
+              "name" : "high_temp",
+              "sensitive" : false
+            },
             "Routing Strategy" : {
               "displayName" : "Routing Strategy",
               "identifiesControllerService" : false,
@@ -425,12 +537,109 @@
           "name" : "Текст для письма",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 504.0,
-            "y" : 632.0
+            "x" : 216.0,
+            "y" : 624.0
           },
           "properties" : {
             "Regular Expression" : "(?s)(^.*$)",
-            "Replacement Value" : "Ожидается температура, равная ${minTemperature} градусов цельсия, что меньше ожидаемой (#{tempThreshold} градусов)",
+            "Replacement Value" : "Ожидается температура, равная ${minTemperature} градусов цельсия, что меньше ожидаемой (#{lowTempThreshold} градусов)",
+            "Evaluation Mode" : "Line-by-Line",
+            "Line-by-Line Evaluation Mode" : "All",
+            "Character Set" : "UTF-8",
+            "Maximum Buffer Size" : "1 MB",
+            "Replacement Strategy" : "Regex Replace"
+          },
+          "propertyDescriptors" : {
+            "Regular Expression" : {
+              "displayName" : "Search Value",
+              "identifiesControllerService" : false,
+              "name" : "Regular Expression",
+              "sensitive" : false
+            },
+            "Replacement Value" : {
+              "displayName" : "Replacement Value",
+              "identifiesControllerService" : false,
+              "name" : "Replacement Value",
+              "sensitive" : false
+            },
+            "Evaluation Mode" : {
+              "displayName" : "Evaluation Mode",
+              "identifiesControllerService" : false,
+              "name" : "Evaluation Mode",
+              "sensitive" : false
+            },
+            "Text to Prepend" : {
+              "displayName" : "Text to Prepend",
+              "identifiesControllerService" : false,
+              "name" : "Text to Prepend",
+              "sensitive" : false
+            },
+            "Line-by-Line Evaluation Mode" : {
+              "displayName" : "Line-by-Line Evaluation Mode",
+              "identifiesControllerService" : false,
+              "name" : "Line-by-Line Evaluation Mode",
+              "sensitive" : false
+            },
+            "Character Set" : {
+              "displayName" : "Character Set",
+              "identifiesControllerService" : false,
+              "name" : "Character Set",
+              "sensitive" : false
+            },
+            "Maximum Buffer Size" : {
+              "displayName" : "Maximum Buffer Size",
+              "identifiesControllerService" : false,
+              "name" : "Maximum Buffer Size",
+              "sensitive" : false
+            },
+            "Replacement Strategy" : {
+              "displayName" : "Replacement Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Replacement Strategy",
+              "sensitive" : false
+            },
+            "Text to Append" : {
+              "displayName" : "Text to Append",
+              "identifiesControllerService" : false,
+              "name" : "Text to Append",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 25,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.ReplaceText",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
+          "identifier" : "6884242e-6829-3141-a7f7-e64e08536b47",
+          "instanceIdentifier" : "01871004-e2f6-1a69-d545-534d0c797eac",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "Текст для письма",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 824.0,
+            "y" : 624.0
+          },
+          "properties" : {
+            "Regular Expression" : "(?s)(^.*$)",
+            "Replacement Value" : "Ожидается температура, равная ${minTemperature} градусов цельсия, что больше ожидаемой (#{highTempThreshold} градусов)",
             "Evaluation Mode" : "Line-by-Line",
             "Line-by-Line Evaluation Mode" : "All",
             "Character Set" : "UTF-8",
@@ -522,8 +731,8 @@
           "name" : "Отправить письмо",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 504.0,
-            "y" : 832.0
+            "x" : 536.0,
+            "y" : 1016.0
           },
           "properties" : {
             "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
@@ -1059,10 +1268,22 @@
           "name" : "temperature_mail",
           "parameters" : [ {
             "description" : "",
+            "name" : "highTempThreshold",
+            "provided" : false,
+            "sensitive" : false,
+            "value" : "30"
+          }, {
+            "description" : "",
             "name" : "tempThreshold",
             "provided" : false,
             "sensitive" : false,
             "value" : "20"
+          }, {
+            "description" : "",
+            "name" : "lowTempThreshold",
+            "provided" : false,
+            "sensitive" : false,
+            "value" : "18"
           } ]
         }
       },
