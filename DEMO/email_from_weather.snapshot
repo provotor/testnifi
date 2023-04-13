@@ -18,7 +18,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
             "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
-            "name" : "ReplaceText",
+            "name" : "Текст для письма",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -37,7 +37,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
             "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
-            "name" : "RouteOnAttribute",
+            "name" : "Условие по температуре",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -109,7 +109,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
             "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
-            "name" : "ReplaceText",
+            "name" : "Текст для письма",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -162,7 +162,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
             "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
-            "name" : "ReplaceText",
+            "name" : "Текст для письма",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -181,7 +181,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
             "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
-            "name" : "ReplaceText",
+            "name" : "Текст для письма",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -240,7 +240,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
             "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
-            "name" : "RouteOnAttribute",
+            "name" : "Условие по температуре",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -259,7 +259,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
             "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
-            "name" : "RouteOnAttribute",
+            "name" : "Условие по температуре",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -312,7 +312,7 @@
             "groupId" : "c78da0b8-a26a-3877-9321-1bddcde5cd3f",
             "id" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
             "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
-            "name" : "RouteOnAttribute",
+            "name" : "Условие по температуре",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -372,7 +372,7 @@
           "identifier" : "786dc0d5-56ec-3d6f-ac7b-3bd5d895556f",
           "instanceIdentifier" : "7a65577e-0187-1000-13e0-028e24ceb362",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "RouteOnAttribute",
+          "name" : "Условие по температуре",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 504.0,
@@ -422,7 +422,7 @@
           "identifier" : "b7cdf57d-6cb6-37df-9222-31aec1f82f72",
           "instanceIdentifier" : "7a69e2f6-0187-1000-2619-78cc25b05b30",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "ReplaceText",
+          "name" : "Текст для письма",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 504.0,
