@@ -351,8 +351,8 @@
         "outputPorts" : [ ],
         "parameterContextName" : "temperature_mail",
         "position" : {
-          "x" : -760.0,
-          "y" : 664.0
+          "x" : -784.0,
+          "y" : 632.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -1041,7 +1041,7 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
+          "scheduledState" : "DISABLED",
           "schedulingPeriod" : "4 hour",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },
