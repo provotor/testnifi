@@ -452,12 +452,12 @@
         "inputPorts" : [ ],
         "instanceIdentifier" : "0187100f-b634-18f2-0e19-2827e7809b5e",
         "labels" : [ ],
-        "name" : "Email о заморозках",
+        "name" : "Email о температуре",
         "outputPorts" : [ ],
         "parameterContextName" : "temperature_mail",
         "position" : {
-          "x" : -784.0,
-          "y" : 632.0
+          "x" : -1872.0,
+          "y" : -800.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -1250,7 +1250,7 @@
           "retriedRelationships" : [ ],
           "retryCount" : 10,
           "runDurationMillis" : 0,
-          "scheduledState" : "DISABLED",
+          "scheduledState" : "ENABLED",
           "schedulingPeriod" : "4 hour",
           "schedulingStrategy" : "TIMER_DRIVEN",
           "style" : { },

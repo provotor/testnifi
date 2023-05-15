@@ -1,10 +1,10 @@
 flows:
-  992d4f33-1e79-44c5-93ae-5453bead7765: {ver: 5, file: email_from_weather.snapshot,
-    comments: '', author: anonymous, created: 1681400504335, flowName: email_from_weather,
-    flowDesc: ''}
   724f6dfd-c566-4a45-9077-3800a887991f: {ver: 5, file: Конвертация_файлов_на_диске..snapshot,
     comments: '', author: anonymous, created: 1680288792559, flowName: Конвертация
       файлов на диске., flowDesc: ''}
+  992d4f33-1e79-44c5-93ae-5453bead7765: {ver: 6, file: email_from_weather.snapshot,
+    comments: '', author: anonymous, created: 1684178823837, flowName: email_from_weather,
+    flowDesc: ''}
   e07c1498-817d-4f8f-b793-563af4ce27ce: {ver: 1, file: Трансформация_JSON.snapshot,
     comments: '', author: anonymous, created: 1680289504993, flowName: Трансформация
       JSON, flowDesc: ''}
