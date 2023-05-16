@@ -18,7 +18,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "54ace155-12b5-3a77-b5b2-c4cd903ed948",
             "instanceIdentifier" : "01871010-e2f6-1a69-13c2-442057003d87",
-            "name" : "JoinEnrichment",
+            "name" : "Объединение данных",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -37,7 +37,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "54f372ee-132d-3ab2-98bd-5866d1cf59da",
             "instanceIdentifier" : "0187100d-e2f6-1a69-37b2-3fb4a7d7b927",
-            "name" : "ForkEnrichment",
+            "name" : "Ветвление",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -45,11 +45,11 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : -35.0,
-            "y" : 911.0
+            "x" : -18.82977294921875,
+            "y" : 954.8905639648438
           }, {
-            "x" : -35.0,
-            "y" : 961.0
+            "x" : -18.82977294921875,
+            "y" : 1004.8905639648438
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -57,7 +57,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "aaed1cb6-df1d-3050-b867-3b5436eba027",
             "instanceIdentifier" : "01871014-e2f6-1a69-d959-019bd72bf160",
-            "name" : "ReplaceText",
+            "name" : "Источник №2",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -76,7 +76,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "aaed1cb6-df1d-3050-b867-3b5436eba027",
             "instanceIdentifier" : "01871014-e2f6-1a69-d959-019bd72bf160",
-            "name" : "ReplaceText",
+            "name" : "Источник №2",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -88,15 +88,15 @@
           "destination" : {
             "comments" : "",
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
-            "id" : "193563c8-f947-3e12-8319-eb9064376dc8",
-            "instanceIdentifier" : "0187101d-e2f6-1a69-a248-ee9b6443f0fb",
-            "name" : "UpdateAttribute",
+            "id" : "1f9beea9-881b-3a66-a68d-d0e2fc88d128",
+            "instanceIdentifier" : "25e4e5ae-0188-1000-8222-04a2881dab09",
+            "name" : "Записать на диск",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
           "groupIdentifier" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
-          "identifier" : "f2f1491f-e170-3250-9aa8-b85bb3843500",
-          "instanceIdentifier" : "0187101e-e2f6-1a69-1777-8b195a55b837",
+          "identifier" : "eec52c38-241b-352f-88f5-debf6be6aac8",
+          "instanceIdentifier" : "25e58840-0188-1000-59e4-8349534d4600",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -109,7 +109,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "54ace155-12b5-3a77-b5b2-c4cd903ed948",
             "instanceIdentifier" : "01871010-e2f6-1a69-13c2-442057003d87",
-            "name" : "JoinEnrichment",
+            "name" : "Объединение данных",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -117,10 +117,10 @@
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : -467.0,
+            "x" : -483.7052001953125,
             "y" : 1207.0
           }, {
-            "x" : -467.0,
+            "x" : -483.7052001953125,
             "y" : 1257.0
           } ],
           "componentType" : "CONNECTION",
@@ -129,7 +129,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "54ace155-12b5-3a77-b5b2-c4cd903ed948",
             "instanceIdentifier" : "01871010-e2f6-1a69-13c2-442057003d87",
-            "name" : "JoinEnrichment",
+            "name" : "Объединение данных",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -148,7 +148,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "54ace155-12b5-3a77-b5b2-c4cd903ed948",
             "instanceIdentifier" : "01871010-e2f6-1a69-13c2-442057003d87",
-            "name" : "JoinEnrichment",
+            "name" : "Объединение данных",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -162,7 +162,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "54ace155-12b5-3a77-b5b2-c4cd903ed948",
             "instanceIdentifier" : "01871010-e2f6-1a69-13c2-442057003d87",
-            "name" : "JoinEnrichment",
+            "name" : "Объединение данных",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -181,7 +181,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "aaed1cb6-df1d-3050-b867-3b5436eba027",
             "instanceIdentifier" : "01871014-e2f6-1a69-d959-019bd72bf160",
-            "name" : "ReplaceText",
+            "name" : "Источник №2",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -195,7 +195,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "54f372ee-132d-3ab2-98bd-5866d1cf59da",
             "instanceIdentifier" : "0187100d-e2f6-1a69-37b2-3fb4a7d7b927",
-            "name" : "ForkEnrichment",
+            "name" : "Ветвление",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -214,7 +214,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "854865e7-c0ce-3f69-925d-ddaadba07450",
             "instanceIdentifier" : "01871017-e2f6-1a69-35da-dba817d78b5c",
-            "name" : "GenerateFlowFile",
+            "name" : "Источник №1",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -228,7 +228,7 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "aaed1cb6-df1d-3050-b867-3b5436eba027",
             "instanceIdentifier" : "01871014-e2f6-1a69-d959-019bd72bf160",
-            "name" : "ReplaceText",
+            "name" : "Источник №2",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
@@ -247,7 +247,46 @@
             "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
             "id" : "54f372ee-132d-3ab2-98bd-5866d1cf59da",
             "instanceIdentifier" : "0187100d-e2f6-1a69-37b2-3fb4a7d7b927",
-            "name" : "ForkEnrichment",
+            "name" : "Ветвление",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : -483.7052001953125,
+            "y" : 1431.0
+          }, {
+            "x" : -483.7052001953125,
+            "y" : 1481.0
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
+            "id" : "1f9beea9-881b-3a66-a68d-d0e2fc88d128",
+            "instanceIdentifier" : "25e4e5ae-0188-1000-8222-04a2881dab09",
+            "name" : "Записать на диск",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
+          "identifier" : "1a759c7c-479e-3152-9a72-9bffcb1b18cb",
+          "instanceIdentifier" : "25e5b67d-0188-1000-8a2a-d30f11bd8222",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "failure" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
+            "id" : "1f9beea9-881b-3a66-a68d-d0e2fc88d128",
+            "instanceIdentifier" : "25e4e5ae-0188-1000-8222-04a2881dab09",
+            "name" : "Записать на диск",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -628,6 +667,93 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
+          "autoTerminatedRelationships" : [ "success" ],
+          "backoffMechanism" : "PENALIZE_FLOWFILE",
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.20.0"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
+          "identifier" : "1f9beea9-881b-3a66-a68d-d0e2fc88d128",
+          "instanceIdentifier" : "25e4e5ae-0188-1000-8222-04a2881dab09",
+          "maxBackoffPeriod" : "10 mins",
+          "name" : "Записать на диск",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : -952.0,
+            "y" : 1392.0
+          },
+          "properties" : {
+            "Create Missing Directories" : "true",
+            "Directory" : "/exchange/enrichment/output",
+            "Conflict Resolution Strategy" : "fail"
+          },
+          "propertyDescriptors" : {
+            "Group" : {
+              "displayName" : "Group",
+              "identifiesControllerService" : false,
+              "name" : "Group",
+              "sensitive" : false
+            },
+            "Owner" : {
+              "displayName" : "Owner",
+              "identifiesControllerService" : false,
+              "name" : "Owner",
+              "sensitive" : false
+            },
+            "Create Missing Directories" : {
+              "displayName" : "Create Missing Directories",
+              "identifiesControllerService" : false,
+              "name" : "Create Missing Directories",
+              "sensitive" : false
+            },
+            "Permissions" : {
+              "displayName" : "Permissions",
+              "identifiesControllerService" : false,
+              "name" : "Permissions",
+              "sensitive" : false
+            },
+            "Maximum File Count" : {
+              "displayName" : "Maximum File Count",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Count",
+              "sensitive" : false
+            },
+            "Last Modified Time" : {
+              "displayName" : "Last Modified Time",
+              "identifiesControllerService" : false,
+              "name" : "Last Modified Time",
+              "sensitive" : false
+            },
+            "Directory" : {
+              "displayName" : "Directory",
+              "identifiesControllerService" : false,
+              "name" : "Directory",
+              "sensitive" : false
+            },
+            "Conflict Resolution Strategy" : {
+              "displayName" : "Conflict Resolution Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Conflict Resolution Strategy",
+              "sensitive" : false
+            }
+          },
+          "retriedRelationships" : [ ],
+          "retryCount" : 10,
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ ],
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
@@ -644,7 +770,7 @@
           "identifier" : "54f372ee-132d-3ab2-98bd-5866d1cf59da",
           "instanceIdentifier" : "0187100d-e2f6-1a69-37b2-3fb4a7d7b927",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "ForkEnrichment",
+          "name" : "Ветвление",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : -952.0,
@@ -678,10 +804,10 @@
           "identifier" : "54ace155-12b5-3a77-b5b2-c4cd903ed948",
           "instanceIdentifier" : "01871010-e2f6-1a69-13c2-442057003d87",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "JoinEnrichment",
+          "name" : "Объединение данных",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -936.0,
+            "x" : -952.0,
             "y" : 1168.0
           },
           "properties" : {
@@ -772,68 +898,6 @@
           "backoffMechanism" : "PENALIZE_FLOWFILE",
           "bulletinLevel" : "WARN",
           "bundle" : {
-            "artifact" : "nifi-update-attribute-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.20.0"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "98c904dd-d4a2-3e90-a632-d561c6faaea6",
-          "identifier" : "193563c8-f947-3e12-8319-eb9064376dc8",
-          "instanceIdentifier" : "0187101d-e2f6-1a69-a248-ee9b6443f0fb",
-          "maxBackoffPeriod" : "10 mins",
-          "name" : "UpdateAttribute",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : -936.0,
-            "y" : 1392.0
-          },
-          "properties" : {
-            "Store State" : "Do not store state",
-            "canonical-value-lookup-cache-size" : "100"
-          },
-          "propertyDescriptors" : {
-            "Delete Attributes Expression" : {
-              "displayName" : "Delete Attributes Expression",
-              "identifiesControllerService" : false,
-              "name" : "Delete Attributes Expression",
-              "sensitive" : false
-            },
-            "Store State" : {
-              "displayName" : "Store State",
-              "identifiesControllerService" : false,
-              "name" : "Store State",
-              "sensitive" : false
-            },
-            "canonical-value-lookup-cache-size" : {
-              "displayName" : "Cache Value Lookup Cache Size",
-              "identifiesControllerService" : false,
-              "name" : "canonical-value-lookup-cache-size",
-              "sensitive" : false
-            },
-            "Stateful Variables Initial Value" : {
-              "displayName" : "Stateful Variables Initial Value",
-              "identifiesControllerService" : false,
-              "name" : "Stateful Variables Initial Value",
-              "sensitive" : false
-            }
-          },
-          "retriedRelationships" : [ ],
-          "retryCount" : 10,
-          "runDurationMillis" : 25,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "backoffMechanism" : "PENALIZE_FLOWFILE",
-          "bulletinLevel" : "WARN",
-          "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
             "version" : "1.20.0"
@@ -846,11 +910,11 @@
           "identifier" : "aaed1cb6-df1d-3050-b867-3b5436eba027",
           "instanceIdentifier" : "01871014-e2f6-1a69-d959-019bd72bf160",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "ReplaceText",
+          "name" : "Источник №2",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -504.0,
-            "y" : 872.0
+            "x" : -488.0,
+            "y" : 912.0
           },
           "properties" : {
             "Regular Expression" : ".*",
@@ -943,10 +1007,10 @@
           "identifier" : "854865e7-c0ce-3f69-925d-ddaadba07450",
           "instanceIdentifier" : "01871017-e2f6-1a69-35da-dba817d78b5c",
           "maxBackoffPeriod" : "10 mins",
-          "name" : "GenerateFlowFile",
+          "name" : "Источник №1",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : -960.0,
+            "x" : -952.0,
             "y" : 440.0
           },
           "properties" : {
