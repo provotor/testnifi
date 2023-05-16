@@ -8,7 +8,7 @@ flows:
   e07c1498-817d-4f8f-b793-563af4ce27ce: {ver: 1, file: Трансформация_JSON.snapshot,
     comments: '', author: anonymous, created: 1680289504993, flowName: Трансформация
       JSON, flowDesc: ''}
-  0a9f7cdb-9a95-4a9a-997a-a2483caeb2a2: {ver: 1, file: enrichment.snapshot, comments: '',
-    author: anonymous, created: 1681632725949, flowName: enrichment, flowDesc: ''}
+  0a9f7cdb-9a95-4a9a-997a-a2483caeb2a2: {ver: 2, file: enrichment.snapshot, comments: '',
+    author: anonymous, created: 1684246384687, flowName: enrichment, flowDesc: ''}
 layoutVer: 1
 bucketId: 211a7b34-c420-428f-b880-be67b1434eb9
